@@ -1,0 +1,327 @@
+{
+  "products": [
+    {
+      "name": "Multi Vite",
+      "description": "This complex multi-vitamin and mineral supplement provides essential minerals and vitamins to help cellular health, which boost overall vitality and health. The formula contains 8-vitamins and iron to boost energy; anti­oxidant rich Vitamin C, E, Beta­Carotene and Zinc to help your immune system; and various nutrients to promote a healthy metabolism and muscle function.",
+      "benefits": [
+        "Provides minerals and vitamins that are essential for health and vitality from the cellular level",
+        "Boosts the immune system, mental health and energy level",
+        "Promotes good vision, appetite and healthy metabolism"
+      ]
+    },
+    {
+      "name": "Pro B",
+      "description": "A healthy gut ensures optimal absorption of all nutrients, including supplementation. This daily health probiotic formula containing 4 strains of probiotic flora that promotes gut health. 70% of the body's immune cells reside in the gut and gut health is key for these cells to operate optimally.",
+      "benefits": [
+        "Promotes a health gut (digestive system) for absorption of nutrients",
+        "Good for ulcers, constipation, irritable bowel syndrome and other stomach issues",
+        "Boosts the immune system and protect against bad bacteria invasion",
+        "Promotes healthy cholesterol levels",
+        "Important for mental health including anxiety and depression issues"
+      ]
+    },
+    {
+      "name": "Aloe Vite",
+      "description": "This potent nutrient-rich supplement containing AloeVera, Vitamin C, Ginseng, Green Tea and Sunderlandia (a traditional African herb called cancer bush), is a powerful wellness booster. It helps to improve the general health of the body, supports the digestive system, promotes a healthy immune system, thereby protecting against ...",
+      "benefits": [
+        "A unique formulation that is a powerful immune booster",
+        "Supports the digestive system and helps to control sugar levels",
+        "Good for purifying the organs and promoting a clear skin . Helps treat ulcers, fibroids and tumours",
+        "Good for burns and wound healing"
+      ]
+    },
+    {
+      "name": "Marina Spa",
+      "description": "Marina Spa Wonder Liquid is a scientifically formulated blend of bio seaweed extract, licorice root and various herbal oils to boost overall vita I ity.",
+      "benefits": [
+        "Good for a smooth, clear, and healthy skin",
+        "Promotes oral and digestive health includ·ng ulcers, heartburn and constipation",
+        "Promotes thyroid health and can help with swellings",
+        "Good for sore throats and colds"
+      ]
+    },
+    {
+      "name": "Defender",
+      "description": "This anti-oxidant rich formulation of selected Vitamins, Minerals, Bioflavonoids, Grape Seed extract and Selenium helps to boost the body's natural immune system, especially in time of chronic stress.",
+      "benefits": [
+        "Boosts and strengthens the body's natural immune system",
+        "Helps in detoxification and removal of free radicals",
+        "Good for use against infections and disease ",
+        "Promotes wound healing"
+      ]
+    },
+    {
+      "name": "Buchu Detox",
+      "description": "This cleansing formula combines the health benefits of Buchu (an African herb) with strong anti-oxidant Turmeric, Ginger, Dandelion and Black Walnut to help with the detoxification of the body. It helps to improve gut health and nutrient absorption in the gut. Cascara Segradaisa natural bark extract that promotes healthy bowel movement.",
+      "benefits": [
+        "For organ and general body detoxification",
+        "Helps improve gut health and nutrient absorption in the stomach and intestines",
+        "Relieves bloating and facilitates bowel movement",
+        "Helps in managing urinary tract infection and other infections"
+      ]
+    },
+    {
+      "name": "40 Plus for Men",
+      "description": "This complex multi-vitamin and mineral supplement provides essential minerals and vitamins to help cellular health, which boost over all vitality and health, especially for men over the age of 40. It contains a combination of botanical ingredients such as Saw Palmetto to promote male vitality. It may support prostate and urinary tract health and could be beneficial for men who suffer from prostate problems.",
+      "benefits": [
+        "Provides essential minerals and vitamins to boost the health of men especially those over 40",
+        "Good for prostrate and urinary tract health",
+        "Boosts healthy male hormone levels to ensure quality sperm and healthy sex drive",
+        "Beneficial for men with prostrate problems"
+      ]
+    },
+    {
+      "name": "40 Plus for Woman",
+      "description": "lsoflavones from soya beans have been used in traditional Eastern medicine for 500+ years and has been reported to provide a number of health benefits. These include the promotion of heart health and the maintenance of bone health in post-menopausal women, as well as help to alleviate menopause symptoms.",
+      "benefits": [
+        "Alleviates menopausal symptoms and menstrual issues",
+        "For bone and heart health ",
+        "Good for cervical health and boosting female libido"
+      ]
+    },
+    {
+      "name": "Omega Plus",
+      "description": "A special blend of Omega 3, 6 and 9 essential oils combined with anti­oxidant rich garlic oil to support cell health and therefore overall body well being. These fatty acids promote the health of the heart, brain, vascular system, skeleton and eyes. Ideal for pregnant women to support fetal eyes and brain development. It can assist with managing healthy cholesterol levels.",
+      "benefits": [
+        "Contains omega 3, 6 and 9 in balanced proportion for optimal effects",
+        "Helps to lower blood cholesterol level and blood pressure",
+        "Very important for the eyes and brain",
+        "Good for arthritis and promotes healthy skin",
+        "Good for cancer and diabetic patients"
+      ]
+    },
+    {
+      "name": "A&R Garde",
+      "description": "This potent herbal formula contains bio-rich ingredients such as Glucosamine, Chrondroitin and MSM in combination with special bone health Vitamins and Minerals. The formulation promotes healthy cartilage to improve cushioning in joints. The anti­inflammatory properties can assist with cartilage repair and pain relief in joints.",
+      "benefits": [
+        "Promotes maintenance of healthy cartilage ",
+        "Contribution to bone health",
+        "Relieves inflammation, pain and other symptoms of arthritis and rheumatism"
+      ]
+    },
+    {
+      "name": "Memorygarde",
+      "description": "This unique blend that combines the benefits of Choline and other minerals to support brain function and can help boost enhanced memory and concentration.",
+      "benefits": [
+        "Promotes brain maintenance and function",
+        "Good for promoting mental concentration and neurological health",
+        "Helps those dealing with conditions like Aizheimer's disease and memory problem"
+      ]
+    },
+    {
+      "name": "Kardiogarde",
+      "description": "Optimize and support the health of your heart with this specially formulated product packed with an array of heart health nutrients. In addition to regular exercise, healthy diet and stress management, this product may help maintain normal cholesterol and blood pressure levels. It may also support healthy blood circulation thereby assisting in heart health.",
+      "benefits": [
+        "Good for healthy blood circulation and heart health",
+        "It helps to maintain normal cholesterol and blood pressure levels"
+      ]
+    },
+    {
+      "name": "African P + Moringa",
+      "description": "African P plus Moringa is a natural blend of African Potato, a medicinal plant that contains Sterols and Sterolins, combined with the nutritious Moringa Oleifera that is rich in antioxidants and bioactive plant compounds.",
+      "benefits": [
+        "Rich in vitamins, minerals and antioxodants to boost the body's immnune system",
+        "Helps to protect against heart diseases in both men and women",
+        "Good for reducing inflammations and fevers"
+      ]
+    },
+    {
+      "name": "Kidgarde",
+      "description": "A comprehensive multi-vitamin and mineral supplement to support healthy grow thin children. With iron, vitamin A, B-vitamins, calcium and other micro nutrients, promote healthy development in children.",
+      "benefits": [
+        "A complete multivitamin supplement that is essential for supporting healthy growth and development in children",
+        "Provides essential nutrients for a healthy immune system in children",
+        "Also good for promoting healthy organ development and functions"
+      ]
+    },
+    {
+      "name": "Body Cream",
+      "description": "Healthgarde Hydrating Body Cream is a non-greasy moisturiser with essential and herbal oils for the whole body to soften dry skin and locks in moisture. Contains Hibiscus, Lemongrass and Grapefruit. ",
+      "benefits": [
+        "An excellent non-oily moisturizer for every skin type",
+        "Cleanse the skin of rash due to insect bite and act as an insect repellent",
+        "Helps to achieve a healthy and firm glowing skin with a uniform colour and tone",
+        "Good for clearing acne such as eczema",
+        "It has antimicrobial properties and can be used against skin infecttion like ringworm"
+      ]
+    },
+    {
+      "name": "Hand Cream",
+      "description": "Healthgarde Hand Cream is scientifically formulated to naturally soothe irritated skin, such as insect bites and stings.",
+      "benefits": [
+        "Can help improve the softness and suppleness of the hands",
+        "Can help repair damaged skin and give a silky feel",
+        "Good for dry and scaly hands"
+      ]
+    },
+    {
+      "name": "Liquid Gold",
+      "description": "...",
+      "benefits": [
+        "Help to maintain a clear and smooth skin with a natural glow",
+        "Bring out the natural colour and tone of the skin without exerting any bleaching effects",
+        "Minimize wrinkles formation and shield the skin from the darkening effect of excess exposure to sunlight"
+      ]
+    },
+    {
+      "name": "Slimgarde Protein Shake",
+      "description": "Slimgarde Protein Shake is convenient, delicious and nutritionally balanced to boost your vitality. Low in carbohydrates and high in protein, it will keep you feeling satisfied and full of energy. Slimgarde Protein Shake is only effective when taken as part of a healthy diet and exercise programme. It is suitable for those suffering from diabetes.",
+      "benefits": [
+        "Good meal replacement supplement that gives a full and satisfied feeling",
+        "Helps to suppress hunger and appetite",
+        "Can boost metabolism and energy usage and so contribute to weight loss"
+      ]
+    },
+    {
+      "name": "Super Cider Plus",
+      "description": "A special herbal blend that can help stabilize body ph, thereby promoting the immune system. This formula can help to boost the fat metabolism and aid with weight management when combined with a healthy eating plan and lifestyle. Apple Cider Vinegar and Green Tea can promote stable blood suqar levels. ",
+      "benefits": [
+        "Can promote stable blood sugar levels",
+        "Helps to stabilize body PH and promote the immune system function",
+        "Helps to boost fat metabolism and weight management"
+      ]
+    },
+    {
+      "name": "Slimgarde CLA",
+      "description": "Slimgarde CLA features a blend of Conjugated Linoleic Acid (CLA) and L­Carnitine to help support weight loss. CLA has been shown in many clinical studies to support lean body composition. Slimgarde CLA is only effective when taken as part of a healthy diet and exercise proqram.",
+      "benefits": [
+        "Acts as a fat absorber that promotes breakdown of fats and the build-up of muscles",
+        "Helps to facilitate weight loss especially when combined with exercise and a healthy diet"
+      ]
+    },
+    {
+      "name": "Slimgarde Kickstart",
+      "description": "The capsule is packed with natural anti­oxidants to help replenish your body as it rids itself of toxins. Detox at the start of your weight loss Journey to kickstart weight loss and you can detox up to once a month thereafter cleanse and rejuvenate your system and encourage continued weight loss. The Slimgarde Kickstart can only be effective when taken as part of a healthy diet and exercise program.",
+      "benefits": [
+        "Helps to detoxifies and cleanse the body",
+        "It prepares the body for healthy metabolism that can lead to weight loss"
+      ]
+    },
+    {
+      "name": "Revive Tea",
+      "description": "Revive Tea provides of anti-oxidants from Green Rooibos and Tumeric, combined with the reviving properties of Fennel and Aniseed.",
+      "benefits": [
+        "It boost the immune system by providing many vital antioxidants",
+        "Effective for improving digestive health and against intestinal problems like bloating and gas",
+        "Promotes cardio􀀘ascular health  and good for managing sleep and ach1ev1ng relaxation",
+        "Increase the body's ability to manage stress"
+      ]
+    },
+    {
+      "name": "Refresh Tea",
+      "description": "Tea Garde Refresh Tea is an invigorating tea blend of anitoxidant rich Green Rooibos and Ginger with a refreshing twist of Chilli.",
+      "benefits": [
+        "Can boost the immune system and also improve digestive health and ulcers",
+        "Helps to boosts and replenish energy levels",
+        "Good for pain and inflammation",
+        "Promotes blood circulation and contributes to good cardiovascular health"
+      ]
+    },
+    {
+      "name": "Flat Tummy Tea",
+      "description": "Flat Tummy Tea is a refreshing tea which contains Green Rooibos, Honeybush, Mint, Ginger, Lemongrass and Senna to aid weight loss and weight maintenance.",
+      "benefits": [
+        "Help to promotes a good dige!,dve health and minimize · related conditions like constipation",
+        "Good for promotietabolism which is essential for managing body weight",
+        "It is good for maintaining healthy cholesterol levels and improving cardiovascular health",
+        "Has immune-boosting properties"
+      ]
+    },
+    {
+      "name": "Hair, Skin & Nails",
+      "description": "An anti-oxidant rich formula prived strong nutritions that benefit skin, hair and nail health. The ingredients help to firm and increase skin elasticity, fight dullness and uneven texture.The phytoestrogens in soybean helps to fight signs of aging and vitamin E that can help to renew dead skin cells and also form new skin cells.",
+      "benefits": [
+        "Improves the health of the skin, hair and nails",
+        "Helps to increase skin firmness and elasticity",
+        "Removes skin dullness and uneven texture",
+        "helps to remove dead skin cells and promote skin renewal"
+      ]
+    },
+    {
+      "name": "Calmeeze",
+      "description": "Valerian is a flowering plant native to Europe and parts of Asia and since ancient times, the root extract has been used to help the body produce a calming effect when stressed.",
+      "benefits": [
+        "Helps to induce calmness and relaxation",
+        "Helps to manage headaches and relive sleeplessness"
+      ]
+    },
+    {
+      "name": "Diagarde",
+      "description": "DiaGarde is a specially formulated nutritional supplement to benefit people that struggle with raised blood sugar levels, such as in the case of Diabetes. Cinnamon with Red Leaf Vine extracts help to stabilize blood sugar levels, thereby lowering the risk of cell damage that can be caused by consistent high blood sugar levels",
+      "benefits": [
+        "Helps blood sugar regulations especially in people with high blood sugar (diabetes)"
+      ]
+    },
+    {
+      "name": "Eyegarde",
+      "description": "Support your eye health with anti­oxidant rich Goji Berry combined with Lutein, Zeaxanthin and Beta-Carotene. This soothing formula contains nutrients that helps to protect, maintain and improve blood circulation to the eyes. It can be especially beneficial for aging eyes, continuous eye strain and dry eyes.",
+      "benefits": [
+        "Boosts and promote general eye health",
+        "Helps to improve and maintain healthy blood circulation to the eyes",
+        "Good for ageing eyes and can help prevent cataracts, glaucoma and retinal inflammation"
+      ]
+    },
+    {
+      "name": "Rockgarde",
+      "description": "The caffeine and the romeine in then Kola nut may speed up the heart rate, which increases circulation. Kola nut can naturally stimulate the central nervous system, which may increase alertness and boost circulation and energy levels. Horny Goat Weed has a long history of using traditional Eastern medicine to help improve low libido in men and women.",
+      "benefits": [
+        "It improves blood circulation and energy levels which _ boosts libido in men and women",
+        "Can stimulate the central nervous system and increase alertness"
+      ]
+    },
+    {
+      "name": "Sea Vital",
+      "description": "Kelp is an excellent source of marine iodine, potassium, magnesium, iron, and calcium that helps many body systems to function normally and promote overall wellbeing. Iodine helps promote normal function of the thyroid, which plays a key role in regulating body metabolism and energy production. Guarana naturally stimulates the central nervous system, which may increase alertness and boost enerqy levels.",
+      "benefits": [
+        "Good for normal function of many body systems including the immune system",
+        "Promotes healthy function of the thyroid and healthy metabolism",
+        "Helps to slow unhealthy cellular growth like in cancer and tumours "
+      ]
+    },
+    {
+      "name": "Stressgarde",
+      "description": "B-complex vitamins can help to reduce fatigue, boost your mood and promote cognitive performance. Vitamin C helps to reduce stress because it allows the body to quickly clear out cortisol, a primary stress hormone that increases sugars in the bloodstream. Vitamin C helps to regulate cortisol and prevent blood pressure from spiking in response to stressful situations. Vitamin C and E are strong anti­oxidants that neutralize free radicals in the body that damage cells and stress and anxietv oroduce more free radicals.",
+      "benefits": [
+        "Helps to reduce fatigue, boost mood and promote mental performance",
+        "It's vitamin C content that can help to regulate cortisol (stress hormone) level and blood pressure",
+        "Helps to check free radicals that can cause cell damage"
+      ]
+    },
+    {
+      "name": "Calmag Plus",
+      "description": "This mineral-rich formulation combines the bone health power of Calcium, Magnesium with Vitamin C, D3 and Zinc.",
+      "benefits": [
+        "Very good for promoting healthy nerve and muscle function",
+        "Can assist in the prevention and treatment of oesteoporosis or fragile bones",
+        "Good for reducing inflammations and fevers"
+      ]
+    }
+  ],
+  "supplement_packs": [
+    "Anaemia",
+    "Arthritis",
+    "Asthma",
+    "Bone",
+    "Chronic Inflammation",
+    "Diabetes",
+    "Eye",
+    "Female Fertility",
+    "Goitre",
+    "Heart",
+    "Hepatitis",
+    "High Blood Pressure",
+    "High Cholesterol",
+    "Hormonal Imbalance (Women)",
+    "Immune Booster",
+    "Liver",
+    "Male Fertility",
+    "Memory",
+    "Pregnant & Lactating Mothers",
+    "Prostate",
+    "Thyroid",
+    "Stress",
+    "Stroke",
+    "Ulcer",
+    "Weight Loss"
+  ]
+}
