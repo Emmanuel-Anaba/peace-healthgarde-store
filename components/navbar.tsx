@@ -1,40 +1,35 @@
 "use client";
+import { useAppContext } from "@/app/context";
+import { NavLink } from "@/lib/interfaces";
 import getImage from "@/utils/getImage";
 import Image from "next/image";
 import Link from "next/link";
 import { RiMenu3Line } from "react-icons/ri";
 
 export default function Navbar() {
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Products" },
-    { name: "Contact" },
-  ];
+  const { navLinks, pathname, open, setOpen } = useAppContext();
 
   return (
-    <>
-      <nav>
-        <Image
-          priority
-          src={getImage("logo")}
-          alt="logo"
-          width={75}
-          height={45}
-        />
-        <ul className="hidden md:flex gap-6">
-          {navLinks.map(({ name, path }) => (
-            <li
-              key={name}
-              className="cursor-pointer text-laurel-600 relative after:absolute
-              after:bg-laurel-600 after:w-0 after:h-0.5 after:left-1/2 after:-translate-x-1/2 after:-bottom-0.5 hover:after:w-full after:duration-500"
-              onClick={() => {}}>
-              <Link href={`/${path || name.toLowerCase()}`}>{name}</Link>
+    <nav>
+      <Image
+        priority
+        src={getImage("logo-white")}
+        alt="logo"
+        width={75}
+        height={45}
+      />
+      <ul>
+        {navLinks.map(({ name, path }: NavLink) => {
+          const newPath = path || `/${name.toLowerCase()}`;
+          const active = pathname === newPath;
+          return (
+            <li key={name} className={active ? "after:w-full" : "after:w-0"}>
+              <Link href={newPath}>{name}</Link>
             </li>
-          ))}
-        </ul>
-        <RiMenu3Line className="sidebar-button md:hidden text-xl" />
-      </nav>
-      {/* <aside>Sidebar</aside> */}
-    </>
+          );
+        })}
+      </ul>
+      <RiMenu3Line className="sidebar-button" onClick={() => setOpen(!open)} />
+    </nav>
   );
 }
