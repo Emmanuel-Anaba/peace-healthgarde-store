@@ -3,10 +3,11 @@ import { useAppContext } from "@/app/context";
 import { NavLink, Product } from "@/lib/interfaces";
 import Link from "next/link";
 import Searchbox from "./searchbox";
+import formatName from "@/utils/formatName";
 
 export default function Sidebar() {
   const { navLinks, pathname, open, setOpen, products } = useAppContext();
-  const isProductsPage = pathname === "/products";
+  const isProductsPage = pathname.includes("/products");
 
   return (
     <>
@@ -39,9 +40,8 @@ export default function Sidebar() {
             <Searchbox />
             <ul className="product-list">
               {products.map(({ name }: Product) => (
-                <li
-                  key={name}>
-                  {name}
+                <li key={name}>
+                  <Link href={`/products/${formatName(name)}`}>{name}</Link>
                 </li>
               ))}
             </ul>
