@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
   return (
     <div className="theme-switcher">
       {themes.map(({ name, icon }) => (
-        <button onClick={() => {}}>{icon}</button>
+        <button key={name} onClick={() => {}}>{icon}</button>
       ))}
     </div>
   );
