@@ -1,3 +1,5 @@
+import formatName from "./formatName";
+
 export default function getImage(name: string) {
-  return `/img/${name.toLowerCase().replaceAll(" ", "-")}.png`;
+  return `/img/${formatName(name)}.png`;
 }

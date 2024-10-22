@@ -1,3 +1,5 @@
+import formatName from "./formatName";
+
 export default function getSVG(name: string) {
-  return `/svg/${name.toLowerCase().replaceAll(" ", "-")}.svg`;
+  return `/svg/${formatName(name)}.svg`;
 }
