@@ -10,6 +10,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight, FaRegHeart } from "react-icons/fa";
 import Image from "next/image";
 import getImage from "@/utils/getImage";
+import BuyNowButton from "./buynowbutton";
 
 export default function MySwiper({ items, type, delay, breakpoints }: MySwiperProps) {
   const prevRef = useRef<HTMLDivElement>(null);
@@ -45,7 +46,7 @@ export default function MySwiper({ items, type, delay, breakpoints }: MySwiperPr
         {items.map(({ name }, i) => (
           <SwiperSlide key={i} className="px-10 md:p-0">
             <div className="product-card group">
-              <FaRegHeart className="group-hover:text-green-600" />
+              <FaRegHeart className="dark:group-hover:text-laurel-700" />
               <Image
                 loading="eager"
                 src={getImage(name)}
@@ -54,13 +55,13 @@ export default function MySwiper({ items, type, delay, breakpoints }: MySwiperPr
                 height={500}
                 className="w-auto h-auto"
               />
-              <p className="md:group-hover:text-green-700">
+              <p className="dark:md:group-hover:text-laurel-700">
                 {name} {type && type}
               </p>
-              {/* <BuyNowButton
+              <BuyNowButton
                 className="md:group-hover:top-0 md:group-hover:opacity-100"
                 productName={name}
-              /> */}
+              />
             </div>
           </SwiperSlide>
         ))}
