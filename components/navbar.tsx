@@ -14,16 +14,18 @@ export default function Navbar() {
     <nav>
       <Image
         priority
-        src={getImage("logo-white")}
+        src={getImage("logo")}
         alt="logo"
-        width={75}
-        height={45}
+        width={130}
+        height={55}
       />
       <div className="flex items-center gap-6">
         <ul>
           {navLinks.map(({ name, path }: NavLink) => {
             const newPath = path || `/${name.toLowerCase()}`;
-            const active = pathname === newPath;
+            const active =
+              pathname === newPath ||
+              (newPath !== "/" && pathname.startsWith(newPath));
             return (
               <li key={name} className={active ? "after:w-full" : "after:w-0"}>
                 <Link href={newPath}>{name}</Link>

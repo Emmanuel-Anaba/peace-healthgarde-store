@@ -21,11 +21,9 @@ export default function Sidebar() {
         <ul className="nav-links">
           {navLinks.map(({ name, path }: NavLink) => {
             const newPath = path || `/${name.toLowerCase()}`;
-            // There's a little bit of a bug here 😁😎
-            // The active stuff doesnt show on /products/[currentProduct]
-            // const active = pathname.includes(newPath);
-            // and this doesn't solve it either cos pathname includes "/" which is the path for home
-            const active = pathname === newPath;
+            const active =
+              pathname === newPath ||
+              (newPath !== "/" && pathname.startsWith(newPath));
             return (
               <li key={name} onClick={() => setOpen(!open)}>
                 <Link
