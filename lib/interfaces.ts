@@ -21,3 +21,5 @@ export interface MySwiperProps {
     [key: number]: { slidesPerView: number; spaceBetween?: number };
   };
 }
+
+export type FormFieldKey = "full_name" | "email_address" | "subject" | "message";

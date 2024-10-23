@@ -1,4 +1,5 @@
 "use client";
+import { FormFieldKey } from "@/lib/interfaces";
 import formSchema from "@/utils/formSchema";
 import onSubmit from "@/utils/onSubmit";
 import { useFormik } from "formik";
@@ -50,14 +51,15 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="lg:col-span-3 grid gap-6 md:grid-cols-2">
       {formFields.map(({ value, type, icon, full }, i) => {
-        const id = value.toLowerCase().replaceAll(" ", "_");
+        const id = value.toLowerCase().replaceAll(" ", "_") as FormFieldKey;
+        const hasError = errors[id] && touched[id];
         return (
           <div
             key={i}
             className={`input-container ${
               full ? "md:col-span-2" : "md:col-span-1"
             }
-            ${errors[id] && touched[id] && "input-error"}
+            ${hasError && "input-error"}
             `}>
             <input
               className="peer"
@@ -72,9 +74,7 @@ export default function ContactForm() {
             <div className="input-icon peer-focus:bg-laurel-100 peer-focus:text-laurel-600">
               {icon}
             </div>
-            {errors[id] && touched[id] && (
-              <p className="error-message">{errors[id]}</p>
-            )}
+            {hasError && <p className="error-message">{errors[id]}</p>}
           </div>
         );
       })}
