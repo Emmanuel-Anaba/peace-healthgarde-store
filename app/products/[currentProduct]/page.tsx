@@ -1,5 +1,4 @@
 "use client";
-
 import { useAppContext } from "@/app/context";
 import { Product } from "@/lib/interfaces";
 import formatName from "@/utils/formatName";

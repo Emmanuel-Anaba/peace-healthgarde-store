@@ -6,10 +6,7 @@ export default function Footer() {
     <footer>
       <p>
         {new Date().getFullYear()} &copy; Built by{" "}
-        <Link
-          target="_blank"
-          className="text-laurel-600"
-          href="https://github.com/Emmanuel-Anaba">
+        <Link target="_blank" href="https://github.com/Emmanuel-Anaba">
           Emmanuel Anaba
           <RiExternalLinkFill />
         </Link>
