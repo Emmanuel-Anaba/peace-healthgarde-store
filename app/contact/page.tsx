@@ -1,7 +1,6 @@
 import ContactForm from "@/components/contactform";
 import getSVG from "@/utils/getSVG";
 import Image from "next/image";
-import "./contact.css"
 
 export default function Contact() {
   return (

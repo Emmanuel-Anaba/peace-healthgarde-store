@@ -4,7 +4,6 @@ import formSchema from "@/utils/formSchema";
 import onSubmit from "@/utils/onSubmit";
 import { useFormik } from "formik";
 import { LuFileText, LuMail, LuSend, LuUser } from "react-icons/lu";
-import "./css/contactform.css";
 
 export default function ContactForm() {
   const formFields = [

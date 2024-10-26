@@ -1,6 +1,5 @@
 "use client";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import "./css/header.css"
 
 export default function Header() {
   const [headText] = useTypewriter({

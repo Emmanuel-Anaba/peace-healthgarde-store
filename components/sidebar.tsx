@@ -4,7 +4,6 @@ import { NavLink, Product } from "@/lib/interfaces";
 import Link from "next/link";
 import Searchbox from "./searchbox";
 import formatName from "@/utils/formatName";
-import "./css/sidebar.css";
 
 export default function Sidebar() {
   const { navLinks, pathname, open, setOpen, products } = useAppContext();

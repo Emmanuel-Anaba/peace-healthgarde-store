@@ -2,7 +2,6 @@
 import Link from "next/link";
 import MySwiper from "@/components/myswiper";
 import { useAppContext } from "../context";
-import "./css/productsection.css";
 
 export default function ProductSection() {
   const productBreakpoints = {
@@ -25,7 +24,7 @@ export default function ProductSection() {
         items={products}
         breakpoints={productBreakpoints}
       />
-      <Link href="/products" className="btn">
+      <Link href="/products">
         VIEW ALL PRODUCTS
       </Link>
       <h2>Suggested Supplement Packs</h2>

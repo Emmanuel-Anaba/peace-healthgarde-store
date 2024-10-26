@@ -1,3 +1,240 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .btn {
+    @apply bg-gradient-to-b from-laurel-600 to-laurel-700 text-gray-50;
+  }
+}
+
+* {
+  @apply outline-0;
+}
+
+svg {
+  @apply inline;
+}
+
+.overlay {
+  @apply md:hidden fixed inset-0 bg-black opacity-35 duration-300 z-[5];
+}
+
+body {
+  @apply bg-gray-50 text-laurel-900 dark:bg-gray-950 dark:text-laurel-700;
+}
+
+main {
+  @apply min-h-[calc(100svh-7.5rem)] mt-[4.5rem];
+}
+
+nav {
+  @apply h-[4.5rem] px-6 md:px-8 lg:px-10 fixed left-0 right-0 top-0 flex items-center justify-between z-20 backdrop-blur-3xl;
+  .logo-container {
+    @apply flex items-center gap-2;
+    div {
+      @apply grid font-medium text-sm;
+    }
+  }
+  > div {
+    @apply flex items-center gap-6;
+    ul {
+      @apply hidden md:flex gap-6;
+      li {
+        @apply cursor-pointer relative after:absolute after:h-0.5 after:left-1/2 after:-translate-x-1/2 after:-bottom-0.5 hover:after:w-full after:duration-500
+      after:bg-laurel-900 dark:after:bg-laurel-700;
+      }
+    }
+    .sidebar-button {
+      @apply md:hidden text-2xl;
+    }
+  }
+}
+
+footer {
+  @apply h-12 grid place-items-center border-t-[1px] dark:border-gray-400 text-gray-900 dark:text-gray-50;
+  a {
+    @apply text-laurel-700 hover:underline underline-offset-2;
+  }
+}
+
+aside {
+  @apply overflow-y-auto fixed top-[4.5rem] bg-inherit bg-opacity-5 backdrop-blur-lg text-inherit w-72 h-[calc(100svh-4.5rem)] md:h-[calc(100svh-7.5rem)] duration-300 z-20;
+  > .nav-links {
+    @apply md:hidden font-medium;
+    a {
+      @apply block py-2 pl-6;
+    }
+  }
+  > .product-list {
+    a {
+      @apply block py-1.5 pl-3;
+    }
+  }
+}
+
+.theme-switcher {
+  @apply rounded-full border-[1px] p-[3px] flex border-laurel-900 dark:border-laurel-700;
+  button {
+    @apply w-8 h-8 rounded-full grid place-items-center;
+  }
+}
+
+.search-box {
+  @apply bg-current sticky top-0 py-2 px-4 text-inherit;
+  div {
+    @apply border-gray-100 relative rounded-full border-[1px] h-8 pl-8 pr-2 grid;
+    > span {
+      @apply rounded-full h-6 w-6 absolute left-[3px] top-1/2 -translate-y-1/2  grid place-items-center text-sm bg-gray-100;
+    }
+    input {
+      @apply bg-transparent text-gray-100 placeholder:text-gray-100;
+    }
+  }
+  ul {
+    @apply absolute top-[2.8rem] left-1/2 -translate-x-1/2 bg-inherit w-64 h-fit max-h-44 overflow-y-auto rounded py-2 grid drop-shadow-lg;
+    a {
+      @apply block py-2 pl-3 font-medium dark:hover:bg-gray-800 dark:hover:text-laurel-600;
+    }
+    p {
+      @apply mx-auto;
+    }
+  }
+}
+
+form {
+  @apply lg:col-span-3 grid gap-6 md:grid-cols-2;
+  .input-container,
+  .textarea-container {
+    @apply border-[1px] relative py-3 pl-4 border-gray-300 dark:border-gray-700 focus-within:border-laurel-300 dark:focus-within:border-laurel-300 duration-500;
+    > input,
+    textarea {
+      @apply bg-transparent h-full w-full text-lg text-zinc-400 focus:text-laurel-400 dark:focus:text-laurel-400 placeholder:text-zinc-400 dark:focus:placeholder:text-laurel-400 focus:placeholder:text-laurel-400 duration-500 placeholder:duration-500;
+    }
+    > textarea {
+      @apply resize-none;
+    }
+    > .input-icon {
+      @apply grid place-items-center rounded-full h-10 w-10 text-xl absolute right-1 top-1/2 -translate-y-1/2 duration-500 bg-gray-100 text-zinc-600 dark:bg-gray-700 dark:text-gray-300;
+    }
+  }
+
+  .input-container {
+    @apply h-[50px] rounded-full pr-12;
+  }
+
+  .textarea-container {
+    @apply h-40 rounded-3xl md:col-span-2;
+  }
+
+  .input-error {
+    @apply border-red-300 dark:border-red-300;
+    > input,
+    > textarea {
+      @apply placeholder:text-red-400 text-red-400;
+    }
+    > .input-icon {
+      @apply bg-red-100 text-red-600 dark:bg-red-100 dark:text-red-600;
+    }
+    > .error-message {
+      @apply absolute -bottom-5 text-red-400 text-sm;
+    }
+  }
+  button {
+    @apply btn;
+  }
+}
+
+/* Product Section */
+section {
+  @apply grid gap-8 py-6 font-medium text-center;
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  a {
+    @apply btn py-2 px-8 mx-auto rounded-full;
+  }
+  > div {
+    @apply relative w-[90%] mx-auto grid;
+    .swiper {
+      @apply w-full;
+      .swiper-slide {
+        @apply px-10 md:p-0;
+      }
+    }
+    .swiper-prev,
+    .swiper-next {
+      @apply absolute top-1/2 -translate-y-1/2 cursor-pointer w-8 h-8 md:w-10 md:h-10 z-10 rounded-full grid place-items-center;
+    }
+    .swiper-prev {
+      @apply -left-1 md:-left-6;
+    }
+    .swiper-next {
+      @apply -right-1 md:-right-6;
+    }
+  }
+
+  .product-card {
+    @apply rounded-3xl border-2 text-center p-4 relative grid duration-700 border-gray-400 text-gray-400 hover:border-current hover:text-current;
+    * {
+      @apply duration-500;
+    }
+    svg {
+      @apply absolute top-4 right-4 text-2xl;
+    }
+    p {
+      @apply tracking-widest text-lg font-semibold;
+    }
+    button {
+      @apply btn font-normal mt-2 rounded-full mx-auto py-2 w-5/6 md:top-48 relative md:opacity-0;
+    }
+  }
+}
+
+header {
+  @apply h-[calc(90svh)] bg-cover bg-no-repeat bg-center text-center grid place-items-center;
+  animation: bgChange 16s infinite;
+  h1 {
+    @apply text-4xl md:text-5xl font-semibold;
+  }
+  p {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@keyframes bgChange {
+  0% {
+    @apply bg-[url("/img/bg-1.png")];
+  }
+  25% {
+    @apply bg-[url("/img/bg-2.png")];
+  }
+  50% {
+    @apply bg-[url("/img/bg-3.png")];
+  }
+  75% {
+    @apply bg-[url("/img/bg-4.png")];
+  }
+  100% {
+    @apply bg-[url("/img/bg-1.png")];
+  }
+}
+
+#contact-page {
+  @apply bg-[url("/svg/header.svg")] bg-top bg-no-repeat grid;
+  > div {
+    @apply mx-auto w-11/12 max-w-[1200px];
+    > h1 {
+      @apply my-6 text-3xl md:text-4xl font-bold text-center text-gray-50 dark:text-gray-950;
+    }
+    > div {
+      @apply border-[1px] w-full grid items-center gap-6 lg:grid-cols-4 p-8 rounded-[48px] border-gray-300 bg-gray-50 dark:border-gray-800 dark:bg-gray-950;
+      > img {
+        @apply hidden lg:block lg:col-span-1;
+      }
+    }
+  }
+}

@@ -62,7 +62,7 @@ export default function MySwiper({
                 {name} {type && type}
               </p>
               <BuyNowButton
-                className="btn md:group-hover:top-0 md:group-hover:opacity-100"
+                className="md:group-hover:top-0 md:group-hover:opacity-100"
                 productName={name}
               />
             </div>

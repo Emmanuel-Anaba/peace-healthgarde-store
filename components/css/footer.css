@@ -1,6 +1,0 @@
-footer {
-  @apply h-12 grid place-items-center border-t-[1px] dark:border-gray-400 text-gray-900 dark:text-gray-50;
-  a {
-    @apply text-laurel-700 hover:underline underline-offset-2;
-  }
-}

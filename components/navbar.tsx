@@ -7,7 +7,6 @@ import Link from "next/link";
 import { RiMenu3Line } from "react-icons/ri";
 import ThemeSwitcher from "./themeswitcher";
 import { useEffect, useRef } from "react";
-import "./css/navbar.css";
 
 export default function Navbar() {
   const { navLinks, pathname, open, setOpen } = useAppContext();

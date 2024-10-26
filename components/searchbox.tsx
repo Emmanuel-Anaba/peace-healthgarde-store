@@ -5,7 +5,6 @@ import formatName from "@/utils/formatName";
 import Link from "next/link";
 import { useState } from "react";
 import { LuSearch } from "react-icons/lu";
-import "./css/searchbox.css";
 
 export default function Searchbox() {
   const [searchInput, setSearchInput] = useState("");

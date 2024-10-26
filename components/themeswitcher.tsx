@@ -2,7 +2,6 @@
 import applyTheme from "@/utils/applyTheme";
 import { useEffect, useState } from "react";
 import { FiMonitor, FiMoon, FiSun } from "react-icons/fi";
-import "./css/themeswitcher.css";
 
 export default function ThemeSwitcher() {
   const themes = [
