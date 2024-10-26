@@ -34,7 +34,7 @@
       .cls-2{fill:#329199}.cls-12,.cls-8{opacity:.1}.cls-9{fill:#0a0a0a}.cls-11{fill:#fff}.cls-13{fill:#4460aa}.cls-14{fill:#f0f0f0}.cls-15{fill:#f9d6b9}.cls-17{fill:#fffcf8}.cls-20{fill:#f5b29c}.cls-21{fill:#6b504d}.cls-27{fill:#2d3030}.cls-28{fill:#e5a495}
     </style>
   </defs>
-  <circle cx="100" cy="100" r="100" style="fill:#4dff37"/>
+  <circle cx="100" cy="100" r="100" style="fill:#22ff00"/>
   <g style="clip-path:url(#clip-path)">
     <path class="cls-2" d="M83.8 104.7H39.5v123.8h44.3v-.2a8.6 8.6 0 0 0 8.2-8.7V113.3a8.6 8.6 0 0 0-8.2-8.6Z"/>
     <rect x="34.3" y="104.6" width="9.8" height="123.7" rx="4.5" style="fill:#1c848d"/>
