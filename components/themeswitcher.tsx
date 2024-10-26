@@ -2,6 +2,7 @@
 import applyTheme from "@/utils/applyTheme";
 import { useEffect, useState } from "react";
 import { FiMonitor, FiMoon, FiSun } from "react-icons/fi";
+import "./css/themeswitcher.css";
 
 export default function ThemeSwitcher() {
   const themes = [
@@ -23,9 +24,8 @@ export default function ThemeSwitcher() {
       {themes.map(({ theme, icon }) => (
         <button
           className={`${
-            currentTheme === theme
-              ? "bg-laurel-900 dark:bg-laurel-700 text-laurel-50"
-              : ""
+            currentTheme === theme &&
+            "bg-laurel-900 dark:bg-laurel-700 text-laurel-50"
           }`}
           key={theme}
           onClick={() => {

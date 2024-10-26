@@ -4,6 +4,7 @@ import formSchema from "@/utils/formSchema";
 import onSubmit from "@/utils/onSubmit";
 import { useFormik } from "formik";
 import { LuFileText, LuMail, LuSend, LuUser } from "react-icons/lu";
+import "./css/contactform.css";
 
 export default function ContactForm() {
   const formFields = [
@@ -47,9 +48,7 @@ export default function ContactForm() {
   });
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="lg:col-span-3 grid gap-6 md:grid-cols-2">
+    <form onSubmit={handleSubmit}>
       {formFields.map(({ value, type, icon, full }, i) => {
         const id = value.toLowerCase().replaceAll(" ", "_") as FormFieldKey;
         const hasError = errors[id] && touched[id];
@@ -71,7 +70,7 @@ export default function ContactForm() {
               onBlur={handleBlur}
               onChange={handleChange}
             />
-            <div className="input-icon peer-focus:bg-laurel-100 peer-focus:text-laurel-600">
+            <div className="input-icon peer-focus:bg-laurel-100 peer-focus:text-laurel-600 dark:peer-focus:bg-laurel-100 dark:peer-focus:text-laurel-600">
               {icon}
             </div>
             {hasError && <p className="error-message">{errors[id]}</p>}
@@ -95,7 +94,7 @@ export default function ContactForm() {
       </div>
       <button
         disabled={isSubmitting}
-        className="md:col-span-2 mx-auto md:mx-0 md:ml-auto w-60 h-11 text-lg rounded-full bg-gradient-to-b from-laurel-500 to-laurel-600 text-laurel-950 disabled:from-laurel-950 disabled:to-laurel-950 disabled:text-laurel-700"
+        className="md:col-span-2 mx-auto md:mx-0 md:ml-auto w-60 h-11 text-lg rounded-full disabled:from-laurel-950 disabled:to-laurel-950 disabled:text-laurel-700"
         type="submit">
         Send <LuSend />
       </button>

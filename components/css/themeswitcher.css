@@ -1,0 +1,6 @@
+.theme-switcher {
+  @apply rounded-full border-[1px] p-[3px] flex border-laurel-900 dark:border-laurel-700;
+  button {
+    @apply w-8 h-8 rounded-full grid place-items-center;
+  }
+}

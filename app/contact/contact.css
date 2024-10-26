@@ -1,0 +1,15 @@
+#contact-page {
+  @apply bg-[url("/svg/header.svg")] bg-top bg-no-repeat grid;
+  > div {
+    @apply mx-auto w-11/12 max-w-[1200px];
+    > h1 {
+      @apply my-6 text-3xl md:text-4xl font-bold text-center text-gray-50 dark:text-gray-950;
+    }
+    > div {
+      @apply border-[1px] w-full grid items-center gap-6 lg:grid-cols-4 p-8 rounded-[48px] border-gray-300 bg-gray-50 dark:border-gray-800 dark:bg-gray-950;
+      > img {
+        @apply hidden lg:block lg:col-span-1;
+      }
+    }
+  }
+}

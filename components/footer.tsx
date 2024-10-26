@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { RiExternalLinkFill } from "react-icons/ri";
+import "./css/footer.css"
 
 export default function Footer() {
   return (

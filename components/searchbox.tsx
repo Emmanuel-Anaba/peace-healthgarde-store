@@ -1,8 +1,11 @@
 "use client";
 import { useAppContext } from "@/app/context";
 import { Product } from "@/lib/interfaces";
+import formatName from "@/utils/formatName";
+import Link from "next/link";
 import { useState } from "react";
 import { LuSearch } from "react-icons/lu";
+import "./css/searchbox.css";
 
 export default function Searchbox() {
   const [searchInput, setSearchInput] = useState("");
@@ -24,13 +27,17 @@ export default function Searchbox() {
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           onFocus={() => setIsFocused(true)}
-          onBlur={() => setIsFocused(false)}
+          onBlur={() => setTimeout(() => setIsFocused(false), 300)}
         />
       </div>
       {isFocused && searchInput && (
         <ul>
           {searchResult.length ? (
-            searchResult.map(({ name }: Product) => <li key={name}>{name}</li>)
+            searchResult.map(({ name }: Product) => (
+              <li key={name}>
+                <Link href={`/products/${formatName(name)}`}>{name}</Link>
+              </li>
+            ))
           ) : (
             <p>No item Found! 😓😢</p>
           )}

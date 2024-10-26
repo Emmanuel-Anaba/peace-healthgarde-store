@@ -2,6 +2,7 @@
 import Link from "next/link";
 import MySwiper from "@/components/myswiper";
 import { useAppContext } from "../context";
+import "./css/productsection.css";
 
 export default function ProductSection() {
   const productBreakpoints = {
@@ -17,21 +18,17 @@ export default function ProductSection() {
   const { products, supplement_packs } = useAppContext();
 
   return (
-    <section className="grid gap-8 py-6">
-      <p className="text-3xl md:text-4xl font-medium text-center">
-        Our Products
-      </p>
+    <section>
+      <h1>Our Products</h1>
       <MySwiper
         delay={3000}
         items={products}
         breakpoints={productBreakpoints}
       />
-      <Link href="/products" className="btn py-2 px-8 mx-auto rounded-full">
+      <Link href="/products" className="btn">
         VIEW ALL PRODUCTS
       </Link>
-      <p className="text-2xl md:text-3xl font-medium text-center">
-        Suggested Supplement Packs
-      </p>
+      <h2>Suggested Supplement Packs</h2>
       <MySwiper
         delay={3000}
         items={supplement_packs.map((name: string) => ({ name }))}

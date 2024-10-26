@@ -7,6 +7,7 @@ import Link from "next/link";
 import { RiMenu3Line } from "react-icons/ri";
 import ThemeSwitcher from "./themeswitcher";
 import { useEffect, useRef } from "react";
+import "./css/navbar.css";
 
 export default function Navbar() {
   const { navLinks, pathname, open, setOpen } = useAppContext();
@@ -32,14 +33,21 @@ export default function Navbar() {
 
   return (
     <nav ref={navbarRef}>
-      <Image
-        priority
-        src={getImage("logo")}
-        alt="logo"
-        width={130}
-        height={55}
-      />
-      <div className="flex items-center gap-6">
+      <div className="logo-container">
+        <Image
+          priority
+          src={getImage("logo")}
+          alt="logo"
+          width={40}
+          height={40}
+        />
+        <div>
+          <span>Peace</span>
+          <span>Healthgarde</span>
+          <span>Store</span>
+        </div>
+      </div>
+      <div>
         <ul>
           {navLinks.map(({ name, path }: NavLink) => {
             const newPath = path || `/${name.toLowerCase()}`;

@@ -4,6 +4,7 @@ import { NavLink, Product } from "@/lib/interfaces";
 import Link from "next/link";
 import Searchbox from "./searchbox";
 import formatName from "@/utils/formatName";
+import "./css/sidebar.css";
 
 export default function Sidebar() {
   const { navLinks, pathname, open, setOpen, products } = useAppContext();
@@ -28,9 +29,7 @@ export default function Sidebar() {
               <li key={name} onClick={() => setOpen(!open)}>
                 <Link
                   className={
-                    active
-                      ? "dark:bg-gray-800 dark:text-laurel-600"
-                      : "text-inherit"
+                    active && "bg-gray-200 dark:bg-gray-900"
                   }
                   href={newPath}>
                   {name}
@@ -43,11 +42,20 @@ export default function Sidebar() {
           <>
             <Searchbox />
             <ul className="product-list">
-              {products.map(({ name }: Product) => (
-                <li key={name}>
-                  <Link href={`/products/${formatName(name)}`}>{name}</Link>
-                </li>
-              ))}
+              {products.map(({ name }: Product) => {
+                const active = pathname.includes(formatName(name));
+                return (
+                  <li key={name}>
+                    <Link
+                      className={`${
+                        active && "border-l-4 border-current font-medium"
+                      }`}
+                      href={`/products/${formatName(name)}`}>
+                      {name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </>
         )}

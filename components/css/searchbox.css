@@ -1,0 +1,21 @@
+.search-box {
+  @apply bg-current sticky top-0 py-2 px-4 text-inherit;
+  div {
+    @apply border-gray-100 relative rounded-full border-[1px] h-8 pl-8 pr-2 grid;
+    > span {
+      @apply rounded-full h-6 w-6 absolute left-[3px] top-1/2 -translate-y-1/2  grid place-items-center text-sm bg-gray-100;
+    }
+    input {
+      @apply bg-transparent text-gray-100 placeholder:text-gray-100 ;
+    }
+  }
+  ul {
+    @apply absolute top-[2.8rem] left-1/2 -translate-x-1/2 bg-inherit w-64 h-fit max-h-44 overflow-y-auto rounded py-2 grid drop-shadow-lg;
+    a {
+      @apply block py-2 pl-3 font-medium dark:hover:bg-gray-800 dark:hover:text-laurel-600;
+    }
+    p {
+      @apply mx-auto;
+    }
+  }
+}

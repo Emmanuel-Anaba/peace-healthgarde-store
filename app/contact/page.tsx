@@ -1,10 +1,11 @@
 import ContactForm from "@/components/contactform";
 import getSVG from "@/utils/getSVG";
 import Image from "next/image";
+import "./contact.css"
 
 export default function Contact() {
   return (
-    <main className="contact-page">
+    <main id="contact-page">
       <div>
         <h1>Contact Us</h1>
         <div>
