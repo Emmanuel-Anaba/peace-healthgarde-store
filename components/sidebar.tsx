@@ -45,7 +45,7 @@ export default function Sidebar() {
               {products.map(({ name }: Product) => {
                 const active = pathname.includes(formatName(name));
                 return (
-                  <li key={name}>
+                  <li key={name} onClick={() => setOpen(!open)}>
                     <Link
                       className={clsx(
                         active && "border-l-4 border-current font-medium"
