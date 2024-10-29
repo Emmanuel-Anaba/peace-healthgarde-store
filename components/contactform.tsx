@@ -2,6 +2,7 @@
 import { FormFieldKey } from "@/lib/interfaces";
 import formSchema from "@/utils/formSchema";
 import onSubmit from "@/utils/onSubmit";
+import clsx from "clsx";
 import { useFormik } from "formik";
 import { LuFileText, LuMail, LuSend, LuUser } from "react-icons/lu";
 
@@ -54,11 +55,11 @@ export default function ContactForm() {
         return (
           <div
             key={i}
-            className={`input-container ${
-              full ? "md:col-span-2" : "md:col-span-1"
-            }
-            ${hasError && "input-error"}
-            `}>
+            className={clsx(
+              "input-container",
+              full ? "md:col-span-2" : "md:col-span-1",
+              hasError && "input-error"
+            )}>
             <input
               className="peer"
               type={type}
@@ -77,9 +78,10 @@ export default function ContactForm() {
         );
       })}
       <div
-        className={`textarea-container ${
+        className={clsx(
+          "textarea-container",
           errors.message && touched.message && "input-error"
-        }`}>
+        )}>
         <textarea
           name="message"
           id="message"

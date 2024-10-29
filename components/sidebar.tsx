@@ -4,6 +4,7 @@ import { NavLink, Product } from "@/lib/interfaces";
 import Link from "next/link";
 import Searchbox from "./searchbox";
 import formatName from "@/utils/formatName";
+import clsx from "clsx";
 
 export default function Sidebar() {
   const { navLinks, pathname, open, setOpen, products } = useAppContext();
@@ -12,12 +13,14 @@ export default function Sidebar() {
   return (
     <>
       <div
-        className={`overlay ${open ? "block" : "hidden"}`}
+        className={clsx("overlay", open ? "block" : "hidden")}
         onClick={() => setOpen(!open)}></div>
       <aside
-        className={`md:left-0 ${open ? "left-0" : "-left-72"} ${
+        className={clsx(
+          "md:left-0",
+          open ? "left-0" : "-left-72",
           isProductsPage ? "md:block" : "md:hidden"
-        }`}>
+        )}>
         <ul className="nav-links">
           {navLinks.map(({ name, path }: NavLink) => {
             const newPath = path || `/${name.toLowerCase()}`;
@@ -27,9 +30,7 @@ export default function Sidebar() {
             return (
               <li key={name} onClick={() => setOpen(!open)}>
                 <Link
-                  className={
-                    active && "bg-gray-200 dark:bg-gray-900"
-                  }
+                  className={clsx(active && "bg-gray-200 dark:bg-gray-900")}
                   href={newPath}>
                   {name}
                 </Link>
@@ -46,9 +47,9 @@ export default function Sidebar() {
                 return (
                   <li key={name}>
                     <Link
-                      className={`${
+                      className={clsx(
                         active && "border-l-4 border-current font-medium"
-                      }`}
+                      )}
                       href={`/products/${formatName(name)}`}>
                       {name}
                     </Link>

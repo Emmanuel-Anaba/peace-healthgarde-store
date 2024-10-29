@@ -1,5 +1,6 @@
 "use client";
 import applyTheme from "@/utils/applyTheme";
+import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { FiMonitor, FiMoon, FiSun } from "react-icons/fi";
 
@@ -11,21 +12,19 @@ export default function ThemeSwitcher() {
   ];
 
   const [currentTheme, setCurrentTheme] = useState(
-    localStorage.getItem("theme") || "system"
+    typeof window !== "undefined" ? localStorage.getItem("theme") : "system"
   );
 
-  useEffect(() => {
-    applyTheme(currentTheme);
-  }, [currentTheme]);
+  useEffect(() => applyTheme(currentTheme!), [currentTheme]);
 
   return (
     <div className="theme-switcher">
       {themes.map(({ theme, icon }) => (
         <button
-          className={`${
+          className={clsx(
             currentTheme === theme &&
-            "bg-laurel-900 dark:bg-laurel-700 text-laurel-50"
-          }`}
+              "bg-laurel-900 dark:bg-laurel-700 text-laurel-50"
+          )}
           key={theme}
           onClick={() => {
             setCurrentTheme(theme);
