@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AppContextProvider from "./context";
 import Sidebar from "@/components/sidebar";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Peace Healthgarde Store",
