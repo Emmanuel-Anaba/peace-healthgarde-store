@@ -238,3 +238,23 @@ header {
     }
   }
 }
+
+#products-page {
+  @apply md:ml-72 max-h-[calc(100svh-7.5rem)] overflow-y-auto;
+}
+
+*::-webkit-scrollbar {
+  @apply w-2.5 rounded-full overflow-hidden;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-laurel-600 rounded-full shadow-2xl;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-laurel-200;
+}
+
+*::-webkit-scrollbar-button {
+  @apply bg-laurel-600;
+}

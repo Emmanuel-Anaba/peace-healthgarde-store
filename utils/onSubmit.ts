@@ -6,9 +6,9 @@ export default async function onSubmit(values: any, { resetForm }: any) {
   // Delay 😏
   await new Promise((resolve) => setTimeout(resolve, 2000));
   // Send Email
-  const service_id = process.env.SERVICE_ID;
-  const template_id = process.env.TEMPLATE_ID;
-  const public_key = process.env.PUBLIC_KEY;
+  const service_id = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const template_id = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const public_key = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
   try {
     const res = await emailjs.send(service_id!, template_id!, values, {
