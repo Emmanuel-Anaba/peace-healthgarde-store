@@ -5,7 +5,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AppContextProvider from "./context";
 import Sidebar from "@/components/sidebar";
-import "./globals.css";
+// import "./globals.css";
+import "./gpt.css"
 
 export const metadata: Metadata = {
   title: "Peace Healthgarde Store",
